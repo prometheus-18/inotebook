@@ -20,5 +20,5 @@ const UserSchema = new Schema({
         default: Date.now
     }
   });
-
+  const User = mongoose.model('User', UserSchema);
   module.exports = mongoose.model('User', UserSchema);
